@@ -176,7 +176,6 @@ function centerPlanet3() {
 
 **Ex CSS do projeto:**
 ```css
-<style>
 #Cartoes-iniciais {
     position: relative;
     display: grid;
@@ -218,7 +217,6 @@ function centerPlanet3() {
     left: 15px;
     top: 52%;
 }
-</style>
     ...
 
 ```
