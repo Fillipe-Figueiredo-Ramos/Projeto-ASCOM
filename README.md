@@ -179,7 +179,7 @@ function centerPlanet3() {
 
 **Ex CSS do projeto:**
 ```css
-#Cartões-iniciais {
+#Cartoes-iniciais {
     position: relative;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
