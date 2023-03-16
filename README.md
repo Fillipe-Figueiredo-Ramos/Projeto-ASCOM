@@ -104,10 +104,9 @@ Nessa página você vai encontrar todo campo de obras e desenvolvimento referent
 
 </head>
 
-```
 **Ex CSS do projeto:**
 ```css
- #Cartõesiniciais {
+ #Cartoes-iniciais {
     position: relative;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -148,7 +147,6 @@ Nessa página você vai encontrar todo campo de obras e desenvolvimento referent
     left: 15px;
     top: 52%;
 }
-
 
 ```
 
