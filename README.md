@@ -173,7 +173,9 @@ function centerPlanet3() {
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/caroselteste.css' ?>">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/testeSliderjs/style.css' ?>">
 </head>
-    ```
+       ...
+
+```
 
 **Ex CSS do projeto:**
 ```css
@@ -218,7 +220,7 @@ function centerPlanet3() {
     left: 15px;
     top: 52%;
 }
-...
+    ...
 
 ```
 
