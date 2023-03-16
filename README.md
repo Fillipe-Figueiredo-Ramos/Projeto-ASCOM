@@ -70,36 +70,17 @@ Nessa página você vai encontrar todo campo de obras e desenvolvimento referent
 * PHP
 * WordPress
 #
-**Ex JavaScript do projeto**
-```js
-$(".planet").click(function() {
-    $('.container').attr("planet-center", this.id);
-    if (this.id == "planet1") centerPlanet1();
-    if (this.id == "planet2") centerPlanet2();
-    if (this.id == "planet3") centerPlanet3();
-});
+**Ex HTML do projeto**
+```html
 
-function centerPlanet1() { 
-    var tl = new TimelineMax()
-    .to('#planet1', 1, {xPercent: 0, z: 1}, 0)
-    .to('#planet2', 1, {xPercent: 140, z: -800}, 0)
-    .to('#planet3', 1, {xPercent: -140, z: -800}, 0)
-    
-}
+            <a class="carousel-control-prev" href="#carouselBSWP" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon seta-1"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
 
-function centerPlanet2() {
-    var tl = new TimelineMax()
-    .to('#planet1', 1, {xPercent: -140, z: -800}, 0)
-    .to('#planet2', 1, {xPercent: 0, z: 1}, 0)
-    .to('#planet3', 1, {xPercent: 140, z: -800}, 0);
-}
-
-function centerPlanet3() {
-    var tl = new TimelineMax()
-    .to('#planet1', 1, {xPercent: 140, z: -800}, 0)
-    .to('#planet2', 1, {xPercent: -140, z: -800}, 0)
-    .to('#planet3', 1, {xPercent: 0, z: 1}, 0);
-
+            <a class="carousel-control-next" href="#carouselBSWP" role="button" data-slide="next">
+                <span class="carousel-control-next-icon seta-2"></span>
+                <span class="sr-only">Próximo</span>
     ...
 
 ```
