@@ -70,20 +70,7 @@ Nessa página você vai encontrar todo campo de obras e desenvolvimento referent
 * PHP
 * WordPress
 #
-**Ex HTML do projeto**
-```html
 
-            <a class="carousel-control-prev" href="#carouselBSWP" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon seta-1"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-
-            <a class="carousel-control-next" href="#carouselBSWP" role="button" data-slide="next">
-                <span class="carousel-control-next-icon seta-2"></span>
-                <span class="sr-only">Próximo</span>
-    ...
-
-```
 **Ex HTML do projeto:**
 ```html
 <!DOCTYPE html>
@@ -95,6 +82,10 @@ Nessa página você vai encontrar todo campo de obras e desenvolvimento referent
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>teste carrossel</title>
 </head>
+         
+   ...
+
+```
 
 <!-- CSS -->
 <style>
