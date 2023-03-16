@@ -101,8 +101,7 @@ Nessa página você vai encontrar todo campo de obras e desenvolvimento referent
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/dropdown.css' ?>">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/caroselteste.css' ?>">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/testeSliderjs/style.css' ?>">
-
-</head>
+```
 
 **Ex CSS do projeto:**
 ```css
