@@ -60,9 +60,16 @@ Nessa página você vai encontrar todo campo de obras e desenvolvimento referent
 >
 >TV Novacap
 >
+>
+#
+# Tecnologias utilizadas no Projeto/Ascom
 
-
-
+* HTML
+* CSS
+* JavaScript
+* PHP
+* WordPress
+#
 **Ex JavaScript do projeto**
 ```js
 $(".planet").click(function() {
