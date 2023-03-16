@@ -169,6 +169,7 @@ function centerPlanet3() {
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/caroselteste.css' ?>">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/testeSliderjs/style.css' ?>">
 </head>
+</html>
        ...
 
 ```
