@@ -77,31 +77,35 @@ Nessa página você vai encontrar todo campo de obras e desenvolvimento referent
 #
 **Ex PHP do projeto**
 ```PHP
-<?php $args = [
-    'post_type' => 'videos',
-    'post_status' => 'publish',
-    'posts_per_page' => 5,
-    'custom_fields' => 'link'
-];
+<?php
+require_once 'header.php';
+?>
 
-$i = 0; ?>
+
+<!--Navbar laranja e imagem-->
 
 <?php
-$my_posts = get_posts($args);
-foreach ($my_posts as $post) {
-    $i++ ?>
-    <section>
-        <?php $link = get_post_meta($post->ID, 'link', true); ?>
-        <div class="gallery">
-            <div class="gallery-container">
-                <iframe
-                    class="<?php echo "gallery-item-" . $i; ?>                                             <?php echo "gallery-item" ?>"
-                    src="<?php recebe($link); ?>" data-index="<?php echo $i; ?>"></iframe>
-            </div>
-            <div class="gallery-controls"></div>
+the_custom_logo();
+
+$args = array(
+    'post_type' => 'banners',
+    'post_status' => 'publish',
+    'posts_per_page' => 1,
+    'category_name' => 'principal'
+);
+
+$query = new WP_Query($args);
+if ($query->have_posts()):
+    while ($query->have_posts()):
+        $query->the_post();
+        ?>
+        <div class="imagem-banner">
+            <?php the_post_thumbnail(); ?>
         </div>
-    </section>
-<?php } ?>
+        <?php
+    endwhile;
+endif;
+?> 
 ...
 
 ```
@@ -141,83 +145,67 @@ function centerPlanet3() {
 **Ex HTML do projeto:**
 ```html
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-        <?php bloginfo('name'); ?>
-    </title>
-    <?php wp_head(); ?>
-    <!-- RESET -->
-    <link rel="stylesheet" href="<?= get_template_directory_uri() . '/css/reset.css' ?>">
-    <!--BOOTSTRAP -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- LINKS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="stylesheet" href="<?= get_template_directory_uri() . '/css/bootstrap.css' ?>">
-    <!-- CSS -->
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/styless.css' ?>">
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/dropdown.css' ?>">
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/caroselteste.css' ?>">
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/testeSliderjs/style.css' ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste carrossel</title>
 </head>
 </html>
-       ...
+   ...
 
 ```
 
 **Ex CSS do projeto:**
 ```css
-#Cartoes-iniciais {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 1em;
-    align-items: center;
-    justify-items: end;
-    float: left;
-    top: 15rem;
-    width: 1800px;
-    height: 900px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.Button-Download {
-    display: inline-block;
-    position: relative;
-    width: 19rem;
-    height: 4.8rem;
-    right: 67%;
-    bottom: 11rem;
-    padding: 10px 25px;
-    background-color: #95cd01;
-    color: white;
-    text-align: center;
-    border: none;
+html,
+body {
+    scroll-behavior: smooth;
 }
 
-.Button-Download:hover {
-    background-color: #95cd01;
-    color: white;
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
-.Button-Download:before,
-.Button-Download:after {
-    content: ' ';
-    display: block;
+.nav-azul {
     position: absolute;
-    left: 15px;
-    top: 52%;
+    width: 100%;
+    height: 10.5%;
+    top: 0px;
+    background-color: #09044c;
 }
-    ...
+
+img.custom-logo {
+    position: absolute;
+    margin-top: 13rem;
+    margin-left: 8rem;
+    height: 87px;
+    width: 368px;
+}
+
+.imagem-banner {
+    width: 2019px;
+    margin-top: -1px;
+    text-align: center;
+    z-index: -2;
+    margin-left: -168px;
+    margin-right: 0px;
+}
+
+.imagem-banner img {
+    height: 872px;
+    width: 2019px;
+}
+...
 
 ```
 
@@ -229,3 +217,13 @@ function centerPlanet3() {
 *Sujestão* | https://ouvidoria.df.gov.br/carta-servico-cidadao/
 *Acesso a informações* | https://www.df.gov.br/category/acesso-a-informacao/
 *Reclamações* | _162_
+>
+>
+**Colaboraodores** | **GitHub page**
+-------------- | ----------------
+**Fillipe Vitor Figueiredo Ramos** | https://github.com/Fillipe-Figueiredo-Ramos
+**Rafael Alencar do Amaral** | https://github.com/RafaelOsama
+**Daniel Guilherme Sousa Matuda** | https://github.com/Daniel-matuda
+**Gabriel Lobo** | https://github.com/G-Lobo
+**Paula Santana** | https://github.com/paula30snt
+
