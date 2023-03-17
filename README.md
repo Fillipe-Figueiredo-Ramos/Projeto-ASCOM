@@ -11,8 +11,9 @@ Nessa página você vai encontrar todo campo de obras e desenvolvimento referent
 
 **Ultimas updates:**
 
-- [x] Pagina sobre a empresa.
+- [x] Wave
 - [x] Cartões iniciais.
+- [x] Pagina sobre a empresa.
 
 
 ## Cartões iniciais:
