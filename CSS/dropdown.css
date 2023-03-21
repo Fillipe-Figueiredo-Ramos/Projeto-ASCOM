@@ -1,0 +1,167 @@
+.dropdownmenus > li, .dropdownmenus > a {
+    display: inline-block;
+}
+
+.dropdownmenus li {
+    position: relative;
+}
+
+.dropdownmenus a:hover {
+    background-color: #f34949;
+    color: #fff;
+}
+
+.submenu1 {
+    position: absolute;
+    background-color:#ff480085;
+    width: 160px;
+    left: 0;
+    display: none;
+    height: auto;
+    /* overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; */
+
+}
+
+.submenu1-2 {
+    position: absolute;
+    background-color:#ff480085;
+    width: 191px;
+    left: 0;
+    display: none;
+    height: auto;
+    /* overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; */
+}
+.submenu1-2 li {
+    width: 192px;
+}
+
+.submenu1-2-2 {
+    position: absolute;
+    background-color:#ff480085;
+    width: 191px;
+    left: 0;
+    display: none;
+    height: 400px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.submenu1-2-2 li {
+    width: 192px;
+}
+
+.submenu1-2-2-2 {
+    position: absolute;
+    background-color:#ff480085;
+    width: 191px;
+    left: 0;
+    display: none;
+    height: auto;
+    /* overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; */
+}
+.submenu1-2-2-2 li {
+    width: 192px;
+}
+
+.submenu2 {
+    position: absolute;
+    right: 100%;
+    width: 220px;
+    top: 0;
+    background-color:#ff480085;
+    display: none;
+    height: auto;
+    /* overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+ */
+}
+
+
+
+ul::-webkit-scrollbar {
+    display: none;
+}
+
+
+.dropdownmenus li:hover > .submenu1 {
+    display: block;
+    animation: slidedown .3s ease;
+}
+.dropdownmenus li:hover > .submenu1-2 {
+    display: block;
+    animation: slidedown .3s ease;
+}
+.dropdownmenus li:hover > .submenu1-2-2 {
+    display: block;
+    animation: slidedown .3s ease;
+}
+.dropdownmenus li:hover > .submenu1-2-2-2 {
+    display: block;
+    animation: slidedown .3s ease;
+}
+
+.submenu1 li:hover > .submenu2 {
+    display: block;
+    animation: slideright .3s ease;
+
+}
+.submenu1-2 li:hover > .submenu2 {
+    display: block;
+    animation: slideright .3s ease;
+}
+
+.submenu1-2-2 li:hover > .submenu2 {
+    display: block;
+    animation: slideright .3s ease;
+}
+
+.submenu1-2-2-2 li:hover > .submenu2 {
+    display: block;
+    animation: slideright .3s ease;
+}
+
+
+@keyframes slidedown {
+    0% {
+        opacity: 0;
+        transform: translateY(-18px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+@keyframes slideright {
+    
+    0% {
+        opacity: 0;
+        transform: translateX(-18px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes slideleft {
+    
+    0% {
+        opacity: 0;
+        transform: translateX(18px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}

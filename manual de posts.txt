@@ -1,0 +1,36 @@
+//post de video do youtube
+
+clique em YouTube
+    adicionar novo
+        adicione título e descrição sucinta do video
+            no campo campos personalizados selecione link(caso seja a primeira vez usando a plataforma, crie a categoria link)
+                em valor, adicione o link do youtube.
+                    publique 
+
+
+//post de noticias
+
+clique em Noticias
+    adicionar novo
+        adicione o titulo e o conteúdo
+            no campo categoria, selecione o destino da noticia(blocos ou destaque,(caso seja a primeira vez usando a plataforma, crie as categorias destaque e blocos))
+                adicione a imagem clicando em "definir imagem destacada"
+                    publique
+
+
+//post de aviso
+
+clique em Aviso
+    adicionar novo
+        adicione o titulo e o conteúdo
+            adicione a imagem clicando em "definir imagem destacada"
+            publique
+
+
+//post da revista
+
+clique em Revista
+    adicione o titulo da postagem(somente para organização interna)
+        no campo de conteudo, adicione o link para a revista
+            adicione a imagem clicando em "definir imagem destacada"    
+                publique

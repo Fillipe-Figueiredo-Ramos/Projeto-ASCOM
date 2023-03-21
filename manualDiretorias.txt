@@ -1,0 +1,54 @@
+
+													CRIANDO A PÁGINA DA DIRETORIA
+
+1º passo
+
+	certifiqeu-se de que você todos os arquivos das diretorias(
+	administrativa
+	edificações
+	financeira
+	juridica
+	urbanização)
+	
+	
+2º passo
+
+	no painel de controles do seu wordpress, clique em "Páginas"
+		clique em adicionar nova
+			adicione o titulo correspondente a pagina a ser criada (titulo só por motivos de organização) (exemplo: Diretoria Urbanização)
+				no canto direito, você verá uma opção chamada "Modelo" (acima da checkbox revisao pendente)
+					clique em modelo e selecione o modelo condizente à página que será criada (exemplo: DiretoriaUrbanização)
+						publique
+						
+						
+3º passo
+
+	verifique a url criada, ela deve estar no segunite formato http://localhost/ASCOM/wordpress/diretoria-urbanizacao/ (este é o formato que se encontra no arquivo html)
+	verifique se o link na página inicial te leva a página da diretoria desejada.
+	
+													ALIMENTANDO A PÁGINA DA DIRETORIA
+													
+1º passo
+
+	no painel de controles do seu wordpress, clique em "Diretorias"
+		clique em adicionar novo
+			preencha as informações conforme a imagem MoldeDiretorias.png
+			
+			
+													LISTA DE CAMPOS PERSONALIZADOS E CATEGORIAS
+										
+Tanto os campos personalizados quanto as categorias necessitam estar com o nome exatamente igual ao da função no arquivo php, caso contrario, o backend nao funcionará
+
+campos personalizados
+	Diretoria
+	formacao
+	nome
+	telefone
+	
+categorias	
+	administrativo
+	edificacoes
+	financeiro
+	juridica
+	urbanizacao
+	

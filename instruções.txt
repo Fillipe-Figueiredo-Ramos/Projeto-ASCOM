@@ -1,0 +1,5 @@
+-colocar os arquivos dentro da pasta do tema no wordpress.
+
+-imagens estao disponibilizadas pelo link dentro do arquivo imagens.txt
+
+-caso ocorra um erro falando que não existe o arquivo de estilos, copiar o texto de style.css e cola-lo em um novo arquivo css
