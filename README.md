@@ -139,15 +139,34 @@ function centerPlanet3() {
 **Ex HTML do projeto:**
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste carrossel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        <?php bloginfo('name'); ?>
+    </title>
+    <?php wp_head(); ?>
+    <!-- RESET -->
+    <link rel="stylesheet" href="<?= get_template_directory_uri() . '/css/reset.css' ?>">
+    <!--BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- LINKS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="<?= get_template_directory_uri() . '/css/bootstrap.css' ?>">
+    <!-- CSS -->
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/styless.css' ?>">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/dropdown.css' ?>">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/caroselteste.css' ?>">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/testeSliderjs/style.css' ?>">
 </head>
-</html>
    ...
 
 ```
@@ -170,34 +189,44 @@ body {
     overflow-x: hidden;
 }
 
-.nav-azul {
-    position: absolute;
-    width: 100%;
-    height: 10.5%;
-    top: 0px;
-    background-color: #09044c;
+#container-cartões {
+    position: relative;
+    width: 170%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-img.custom-logo {
-    position: absolute;
-    margin-top: 13rem;
-    margin-left: 8rem;
-    height: 87px;
-    width: 368px;
+#Cartões-iniciais {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 1em;
+    place-items: center;
+    width: 1920px;
+    height: 125vh;
+    bottom: 5rem;
 }
 
-.imagem-banner {
-    width: 2019px;
-    margin-top: -1px;
-    text-align: center;
-    z-index: -2;
-    margin-left: -168px;
-    margin-right: 0px;
+#Centered-cards {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    height: 75%;
+    padding: 20px;
+    max-width: 1800px;
 }
 
-.imagem-banner img {
-    height: 872px;
-    width: 2019px;
+#Cartão {
+    display: inline-flex;
+    width: 260px;
+    height: 370px;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-top: 25px;
+    border-radius: 1rem;
+    box-shadow: 20px 20px 60px #9f9f9f, -20px -20px 60px #ffffff;
 }
 ...
 
