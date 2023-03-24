@@ -43,7 +43,7 @@ Nessa página você vai encontrar todo campo de obras e desenvolvimento referent
 ### Todas obras e ações que estão ocorrendo no Distrito Federal
 
 
-### Rede social:
+### REDES SOCIAIS
 [Instagram](https://www.instagram.com/novacapoficial/)
 
 [Youtube](https://www.youtube.com/channel/UC0owvcR8qqAXMGMkUFPDJ1g)
