@@ -82,31 +82,33 @@ Nessa página você vai encontrar todo campo de obras e desenvolvimento referent
 require_once 'header.php';
 ?>
 
+<?php $args = [
+    'post_type' => 'videos',
+    'post_status' => 'publish',
+    'posts_per_page' => 5,
+    'custom_fields' => 'link'
+];
 
-<!--Navbar laranja e imagem-->
+$i = 0; ?>
 
 <?php
-the_custom_logo();
-
-$args = array(
-    'post_type' => 'banners',
-    'post_status' => 'publish',
-    'posts_per_page' => 1,
-    'category_name' => 'principal'
-);
-
-$query = new WP_Query($args);
-if ($query->have_posts()):
-    while ($query->have_posts()):
-        $query->the_post();
-        ?>
-        <div class="imagem-banner">
-            <?php the_post_thumbnail(); ?>
+$my_posts = get_posts($args);
+foreach ($my_posts as $post) {
+    $i++ ?>
+    <section>
+        <?php $link = get_post_meta($post->ID, 'link', true); ?>
+        <div class="gallery">
+            <div class="gallery-container">
+                <iframe
+                    class="<?php echo "gallery-item-" . $i; ?> 
+                      <?php echo "gallery-item" ?>"
+                    src="<?php recebe($link); ?>" data-index="<?php echo $i; ?>"></iframe>
+            </div>
+            <div class="gallery-controls"></div>
         </div>
-        <?php
-    endwhile;
-endif;
-?> 
+    </section>
+<?php } ?>
+<script src="<?php echo get_stylesheet_directory_uri() . '/testeSliderjs/script.js' ?>"></script>
 ...
 
 ```
