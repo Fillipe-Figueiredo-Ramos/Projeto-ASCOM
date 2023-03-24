@@ -7,9 +7,9 @@
 [TV Novacap](#tv-novacap)
 
 # Bem vindo a pagina intranet da Novacap.
-Nessa página você vai encontrar todo campo de obras e desenvolvimento referente a **Novacap** em todo  _Distrito Federal e entorno._
+Nessa página você vai encontrar todos os campos de obras e desenvolvimento referente a **Novacap** em todo  _Distrito Federal e entorno._
 
-**Ultimas updates:**
+**Ultimos updates:**
 
 - [x] Wave
 - [x] Cartões iniciais.
@@ -43,7 +43,8 @@ Nessa página você vai encontrar todo campo de obras e desenvolvimento referent
 ### Todas obras e ações que estão ocorrendo no Distrito Federal
 
 
-### REDES SOCIAIS
+## REDES SOCIAIS
+### Abaixo encontramos alguns endereços virtuais da Novacap
 [Instagram](https://www.instagram.com/novacapoficial/)
 
 [Youtube](https://www.youtube.com/channel/UC0owvcR8qqAXMGMkUFPDJ1g)
@@ -53,16 +54,6 @@ Nessa página você vai encontrar todo campo de obras e desenvolvimento referent
 [Flickr](https://www.novacap.df.gov.br/flickr/)
 >
 >
->Acima encontramos alguns endereços virtuais da Novacap
->
->Avisos e comunicados oficiais
->
->Notícias
->
->TV Novacap
->
->
-#
 # Tecnologias utilizadas no Projeto/Ascom
 
 * PHP
