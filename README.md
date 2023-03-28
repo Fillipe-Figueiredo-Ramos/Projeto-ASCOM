@@ -11,6 +11,8 @@ Nessa página você vai encontrar todos os campos de obras e desenvolvimento ref
 
 **Ultimos updates:**
 
+- [x] Menu 
+- [x] Cartões de avisos 
 - [x] Wave
 - [x] Cartões iniciais.
 - [x] Pagina sobre a empresa.
