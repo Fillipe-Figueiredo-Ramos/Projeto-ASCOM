@@ -35,8 +35,6 @@ require_once 'header.php';
 </div>
 <img id="wave" src="<?php echo get_stylesheet_directory_uri() . '/assets/img/wave-ai.svg' ?>" alt="">
 
-<!--Fim da Navbar laranja e imagem-->
-
 <!--body-->
 
 <!--libras-->

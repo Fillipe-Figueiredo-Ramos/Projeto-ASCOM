@@ -14,12 +14,62 @@ body {
     overflow-x: hidden;
 }
 
+.row {
+    width: 200%;
+}
+
 .nav-azul {
     position: absolute;
     width: 103%;
     height: 10.5%;
-    top: 21px;
+    top: 3.2rem;
     background-color: #09044c;
+}
+
+/* #Totalpost {
+    position: relative;
+    width: 97%;
+    height: 165px;
+    top: 10rem;
+    left: 1.6%;
+    background: linear-gradient(45deg,blue, rgb(47, 130, 214), #00ccf0);
+    border-radius: 10px;
+} */
+
+
+#Resultados {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.ResultCard {
+    position: relative;
+    width: 45%;
+    height: 30%;
+    left: 5%;
+    top: 13rem;
+    margin-top: 2rem;
+    background: #ffffff;
+    box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
+    cursor: pointer;
+}
+
+.ImgResult img {
+    position: relative;
+    top: 5rem;
+    left: 2%;
+}
+
+.ResultTittle {
+    position: relative;
+    left: 20%;
+    bottom: 5rem;
+}
+
+#Seach-footer {
+    position: relative;
+    top: 15rem;
 }
 
 img.custom-logo {
@@ -32,11 +82,6 @@ img.custom-logo {
 
 .imagem-banner {
     width: 2019px;
-    margin-top: -1px;
-    text-align: center;
-    z-index: -2;
-    margin-left: -168px;
-    margin-right: 0px;
 }
 
 .imagem-banner img {
@@ -49,6 +94,7 @@ img.custom-logo {
     width: 110%;
     height: 6.5%;
     background-color: #2314f1;
+    top: 90rem;
 }
 
 .custom-shape-divider-bottom-1679004214 {
@@ -140,8 +186,8 @@ header {
 .s130 {
     position: absolute;
     float: right;
-    left: 69%;
-    top: -25%;
+    left: 66%;
+    bottom: 25%;
 }
 
 
@@ -228,8 +274,8 @@ header {
 #icons {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 1.5%;
-    padding-right: 1.5%;
+    margin-top: 1.4%;
+    padding-right: 4.5%;
 }
 
 .fa {
@@ -372,236 +418,42 @@ header {
 
 /*************************************************************************************************************************************************/
 
-.menu-menu-laranja-container {
+
+#nav-menu {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    float: right;
-    right: 0px;
+    justify-content: space-evenly;
+    column-gap: 35px;
     height: 54px;
-    margin-top: -721px;
+    overflow: hidden;
+    bottom: 65rem;
+    float: right;
     background: #ff4800;
     z-index: 3;
 }
 
-.menu-menu-laranja-container ul {
-    list-style: none;
-}
-
-.menu-menu-laranja-container ul ul ul {
+#nav-menu li {
     position: relative;
-    top: auto;
-    margin-top: -43px;
-    min-width: 10em;
-    max-width: 1000px;
-}
-
-.nav-list {
-    float: right;
-    height: 20px;
-}
-
-.menu-menu-laranja-container ul li a {
-    color: #ffffff;
-}
-
-.menu-menu-laranja-container ul ul {
-    display: none;
-    margin: 0;
-}
-
-.menu-menu-laranja-container ul li:hover>ul {
-    display: block;
-
-}
-
-.sub-menu li {
-    background: #ff4800;
-    opacity: 0.7;
-}
-
-/************************************************************classe de espaçamento para palavras*********************************************************************************/
-
-.small-item
-
-/*para palavras de até 3 caracteres*/
-    {
-    width: 55px;
-    height: 54px;
-    font-size: 19px;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: 500;
-}
-
-.medium-item
-
-/*para palavras de 4 a 8 caracteres*/
-    {
-    width: 110px;
-    height: 54px;
-    font-size: 19px;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: 500;
-}
-
-.large-item
-
-/*para palavras de 5 a 12 caracteres*/
-    {
-    width: 160px;
-    height: 54px;
-    font-size: 19px;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: 500;
-}
-
-.giant-item
-
-/*para palavras composta de a partir de 12 caracteres*/
-    {
-    width: 350px;
-    height: 54px;
-    font-size: 19px;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: 500;
-}
-
-.LeisDec-item {
-    width: 540px;
-    height: 80px;
-    padding-top: 25px;
-    font-size: 19px;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: 500;
-}
-
-/************************************************************classes de posição*******************************************************************/
-
-.itens-primarios {
-    text-align: center;
-    float: left;
-    position: relative;
+    top: 0.8rem;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
-.sub-menu-normal {
-    float: right;
-    padding-top: 14%;
-}
-
-
-.sub-menu-small {
-    position: absolute;
-    top: 120%;
-    left: -50%;
-    margin: -25px 0 0 -25px;
-    padding-top: 15%;
-}
-
-.sub-menu-large {
-    position: absolute;
-    top: 120%;
-    left: -40%;
-    margin: -25px 0 0 -25px;
-    padding-top: 4%;
-}
-
-.sub-menu-final {
-    float: right;
-    padding-top: 4.5%;
-}
-
-.sub-menu-direita {
-    position: relative;
-    top: auto;
-    left: 82%;
-    padding-top: 10%;
-    min-width: 10em;
-    max-width: 1000px;
-}
-
-.sub-menu-esquerda {
-    position: relative;
-    top: auto;
-    margin-left: -217%;
-    padding-top: 10%;
-}
-
-.giant-menu-esquerda {
-    position: absolute;
-    top: 0;
-    left: -45%;
-    padding-top: 4.5%;
-}
-
-.LeisDec-a-esquerda {
-    margin-left: -560px;
-}
-
-.LeisDec-a-direita {
-    position: relative;
-    margin-left: 330px;
-    top: -75px;
-}
-
-
-.final-list {
-    width: 350px;
-    margin-left: -150px;
-}
-
-
-/************************************************************hover********************************************************************************/
-
-.menu-menu-laranja-container li a:hover {
+.Camada-principal a {
+    color: #ffffff;
     text-decoration: none;
 }
 
-.nav-list li:hover a {
-    border-radius: 15px;
-    border: 2px solid #ffffff;
-    padding: 0 6px 2px 6px
+.Camada-principal ul {
+    display: none;
 }
 
-.itens-primarios:hover ul a {
-    border-radius: 0;
-    border: 0;
+.Camada-principal ul:hover {
+    display: block;
+    background: #ff4800;
+    opacity: 0.5;
 }
-
-.nav-list ul li:hover a {
-    border-radius: 15px;
-    border: 2px solid #ffffff;
-    padding: 0 6px 2px 6px
-}
-
-.nav-list ul li:hover ul a {
-    border-radius: 0;
-    border: 0;
-}
-
-.nav-list ul ul li:hover a {
-    border-radius: 15px;
-    border: 2px solid #ffffff;
-    padding: 0 6px 2px 6px
-}
-
-.nav-list ul ul li:hover ul a {
-    border-radius: 0;
-    border: 0;
-}
-
-.nav-list ul ul ul li:hover a {
-    border-radius: 15px;
-    border: 2px solid #ffffff;
-    padding: 0 6px 2px 6px
-}
+    
 
 /*************************************************************************************************************************************************/
 
@@ -1399,6 +1251,8 @@ header {
     line-height: 24px;
     vertical-align: middle;
     margin: 0 10px;
+
+
     color: #0f1a7b
         /* cor da bolinha */
 }
@@ -2340,14 +2194,15 @@ header {
     place-items: center;
     width: 1920px;
     height: 125vh;
+    bottom: 5rem;
 }
 
 #Centered-cards {
     position: relative;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    width: 85%;
-    height: 80%;
+    width: 80%;
+    height: 75%;
     padding: 20px;
     max-width: 1800px;
 }
@@ -2382,22 +2237,18 @@ header {
 
 #CardsIcons img {
     position: relative;
-    width: 130px;
-    height: 30%;
+    width: 100px;
+    height: 25%;
     overflow: hidden;
-    right: 30%;
-    top: 5%;
-    float: right;
+    top: 2rem;
+    left: 35%;
     border-radius: 60px;
 }
 
 #CardsIconsRevista img {
     position: relative;
-    width: 260px;
-    height: 370px;
+    height: 37rem;
     overflow: hidden;
-    right: 27.5%;
-    top: 0;
 }
 
 #Cards-Content {
@@ -2405,7 +2256,7 @@ header {
     width: 263px;
     height: 267px;
     top: 35%;
-    right: 85%;
+    right: 40%;
 }
 
 .Content-item {
@@ -2421,13 +2272,11 @@ header {
 
 .TextoCartões {
     position: relative;
-    width: 200%;
+    width: 170%;
     height: 100px;
     overflow: hidden;
     font-size: 16px;
 }
-
-
 
 .Button-VejaMais {
     width: 165%;
@@ -2438,7 +2287,7 @@ header {
     display: inline-block;
     position: relative;
     width: 19rem;
-    right: 63%;
+    right: 79%;
     bottom: 12rem;
     padding: 10px 25px;
     background-color: #95cd01;
@@ -2520,6 +2369,17 @@ header {
     margin-top: 30px;
 }
 
+#ButtonTittleVejaMais {
+    position: relative;
+    font-size: 19px;
+    top: 2rem;
+}
+
+.Button-VejaMais a:hover {
+    color: #09044c;
+    text-decoration: none;
+}
+
 #ButtonTittleDownload {
     position: relative;
     font-size: 20px;
@@ -2529,7 +2389,11 @@ header {
     top: 0.5rem;
 }
 
-#ButtonTittleDownload:hover {
+.Button-Download:hover {
+    text-decoration: none;
+}
+
+.Button-Download a:hover {
     text-decoration: none;
 }
 
@@ -2543,7 +2407,7 @@ header {
 /******************************************/
 
 
- #circulo {
+#circulo {
     width: 7.1rem;
     height: 7.1rem;
     border-radius: 50%;
@@ -2574,23 +2438,13 @@ header {
     font-size: 2rem;
 }
 
-.text-white {
-    width: 101%;
-    font-size: 2rem;
-    color: #ffffff;
-    margin-top: 0px;
-}
 
 
 /* ****************************AVISOS*********************** */
-.row {
-    margin-bottom: -118px;
-    margin-top: 101px;
-    margin-left: -15px;
-    margin-right: -15px;
-}
+
 
 #AvisosContainer {
+    position: relative;
     display: grid;
     place-items: center;
     width: 1920px;
@@ -2598,6 +2452,7 @@ header {
     align-items: center;
     justify-content: center;
     align-content: center;
+    bottom: 20rem;
 }
 
 #Avisos {
@@ -2608,84 +2463,82 @@ header {
     padding: 20px;
 }
 
+#Avisos::before,
+#Avisos h1::before,
+#Avisos h1::after {
+    content: ' ';
+    display: block;
+    position: relative;
+}
+
+#Avisos::before {
+    width: 5px;
+    height: 4px;
+    top: 7.4rem;
+    left: 45%;
+    border-radius: 2px;
+    background-color: #1f75fe;
+    ;
+}
+
+#Avisos h1::before {
+    width: 77px;
+    height: 4px;
+    top: 7rem;
+    left: 82%;
+    border-radius: 2px;
+    background-color: #1f75fe;
+}
+
+#Avisos h1::after {
+    width: 15px;
+    height: 4px;
+    bottom: 1.3rem;
+    left: 92%;
+    border-radius: 2px;
+    background-color: #1f75fe;
+}
 
 #Avisos h1 {
+    width: 830px;
     font-size: 41px;
     line-height: 79px;
     color: #2d3091;
     font-weight: 800;
     font-family: "Helvetica";
-    width: 877px;
-    height: 70px;
-    overflow: hidden;
 }
 
 #Avisos p {
+    width: 748px;
+    height: 23px;
     font-size: 27px;
     line-height: 37px;
     color: #696969;
+    font-family: "Myriad Pro";
     text-align: center;
-}
-
-#lps {
-    margin-left: -11px;
-}
-
-#linha-ps-1 {
-    margin-top: -28px;
-    margin-left: 501px;
-
-}
-
-.linha-1 {
-    width: 77px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #1f75fe;
-}
-
-#linha-ps-2 {
-    margin-top: -33px;
-    margin-left: 584px;
-
-}
-
-.linha-2 {
-    width: 16px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #1f75fe;
-}
-
-#linha-ps-3 {
-    margin-top: -33px;
-    margin-left: 605px;
-
-}
-
-.linha-3 {
-    width: 6px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #1f75fe;
 }
 
 #AvisosOficiais {
     position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    left: 1.77%;
     grid-column-gap: 0px;
     grid-row-gap: 1em;
     align-items: center;
     justify-items: end;
-    float: left;
     width: 1800px;
     height: 900px;
+    bottom: 20rem;
 }
 
 .CardAviso {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 555px;
-    height: 398px;
+    height: 405px;
+    padding: 20px;
     background-color: #ffffff;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.53));
 }
@@ -2705,15 +2558,16 @@ header {
     width: 95%;
     height: 30rem;
     top: 3rem;
-    right: 18%;
+    right: 2.8%;
     overflow: hidden;
 }
 
 .TittleAviso {
     position: relative;
-    width: 535px;
+    width: 510px;
     height: 40px;
     top: 4rem;
+    right: 3%;
     overflow: hidden;
     font-size: 25px;
     color: #078dff;
@@ -2722,7 +2576,7 @@ header {
 .vejaTodos {
     color: black;
     margin-left: 25.7rem;
-    margin-top: -3rem;
+    margin-top: 100rem;
     position: absolute;
     font-size: x-large;
     font-weight: 700;
@@ -2740,158 +2594,166 @@ header {
     width: 133px;
 }
 
-.primeira-linha {
-    position: absolute;
-    display: inline-flex;
-    left: 11%;
-    top: 105%;
+#noticiasContainer {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 1920px;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    bottom: 13rem;
 }
 
-.segunda-linha {
-    display: flex;
-    margin: -14% -26% -4% 0%;
-    align-items: flex-end;
+#noticias {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 1920px;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
-.noticias h1 {
-    margin-top: 2rem;
+#noticias h1 {
+    position: relative;
     text-align: center;
     font-size: 46px;
     line-height: 89px;
-    color: #2d3091;
     font-weight: 800;
-    font-family: "Helvetica";
+    color: #2d3091;
 }
 
-#tps {
-    margin-left: 6px;
+#noticias h1::before,
+#noticias h1::after,
+#noticias::before {
+    content: ' ';
+    display: block;
+    position: relative;
 }
 
-#trasso-ps-1 {
-    margin-top: -19px;
-    margin-left: 914px;
-}
-
-.trasso-1 {
-    width: 77px;
+#noticias h1::before {
+    position: relative;
+    width: 60px;
     height: 4px;
+    top: 7rem;
+    left: 49%;
     border-radius: 2px;
     background-color: #1f75fe;
-
 }
 
-#trasso-ps-2 {
-    margin-top: -9px;
-    margin-left: 997px;
-}
-
-.trasso-2 {
+#noticias h1::after {
+    position: relative;
     width: 16px;
     height: 4px;
+    left: 52.4%;
+    bottom: 2.3rem;
     border-radius: 2px;
     background-color: #1f75fe;
 }
 
-#trasso-ps-3 {
-    margin-top: -9px;
-    margin-left: 1020px;
-}
-
-.trasso-3 {
-    width: 6px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #1f75fe;
-}
-
-.noticias p {
-    margin-top: 2rem;
+#noticias p {
+    position: relative;
     font-size: 2.7rem;
     color: #696969;
     text-align: center;
-    margin-bottom: -56px;
     padding: 0 40rem;
 }
 
-.wp-post-image {
-    margin-left: 10rem;
+#noticias::before {
+    position: relative;
+    width: 6px;
+    height: 4px;
+    top: 7.4rem;
+    left: 4.2%;
+    border-radius: 2px;
+    background-color: #1f75fe;
+}
+
+#Noticias {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 1em;
+    width: 1920px;
+    height: 500px;
+    left: 8.9%;
+}
+
+#CardsContainer {
+    position: relative;
+    width: 675px;
+    height: 193px;
+    margin-left: -10rem;
 
 }
 
-#noticias h2 {
-    font-weight: 600;
-    font-size: xx-large;
-    position: absolute;
-    background-color: rgba(7, 141, 255, 0.5);
-    color: white;
-    text-align: start;
-    margin: -14.4rem 0 0 10rem;
-    padding: 0 99.8rem 7.4rem 3.2rem;
+#NoticiasCard {
+    position: relative;
+    width: 90%;
+    height: 100%;
 }
 
-#noticias h3 {
-    overflow: hidden;
-    width: 801px;
-    height: 26px;
-    font-size: 23px;
-    line-height: 23px;
-    color: #078dff;
-    margin-left: 6px;
-    margin-top: 17px;
-    font-family: "Coolvetica";
+#NoticiasCard ul {
+    position: relative;
+    width: 800px;
+    height: 193px;
 }
 
-#noticiasCartao {
-    margin-top: -81px;
-    margin-left: 16px;
-    width: 584px;
-    height: 148px;
-    display: inline-block;
+#NoticiasCard li {
+    display: block;
 }
 
-#noticiasCartao img {
-    height: 155px;
+#Noticias img {
+    position: relative;
     width: 165px;
-    margin-left: 25px;
-    max-width: 164px;
+    height: 120px;
     border-radius: 10px;
     float: left;
 }
 
-#noticiaData {
-    font-size: 19px;
-    background-color: #f3f4f8;
-    border-radius: 40px;
-    margin-left: 271px;
-    margin-right: 258px;
-    margin-top: -37px;
-    padding: 2px 0 4px 0;
-}
-
-#nCartao h3 {
-    width: 384px;
-    height: 24px;
+#NoticiasTittle {
+    position: relative;
+    width: 305px;
+    height: 35px;
     overflow: hidden;
-    position: absolute;
+    left: 2%;
+    top: 3.5rem;
     font-weight: 700;
     font-size: 30px;
     text-align: initial;
-    margin-top: 2px;
-    margin-left: 205px;
     color: #201f1f;
 }
 
+
+#NoticiasData {
+    position: absolute;
+    width: 200px;
+    height: 35px;
+    overflow: hidden;
+    left: 25%;
+    font-size: 19px;
+    background-color: #f3f4f8;
+    border-radius: 40px;
+    padding: 2px 0 4px 5px;
+}
+
+
 .h4 {
-    width: 378px;
+    position: relative;
+    width: 320px;
     height: 102px;
     overflow: hidden;
+    top: 2em;
     font-size: 17px;
     font-weight: 500;
     text-align: justify;
-    margin-left: 167px;
-    margin-top: 57px;
-    padding-left: 17px;
+    padding-left: 20px;
     color: #696969;
+
 }
 
 #nCartao {
@@ -2899,19 +2761,14 @@ header {
     margin-left: 277px;
 }
 
-#noticiaCol {
-    margin-right: -206px;
-    margin-left: -238px;
-    margin-top: 125px;
-}
-
 .noticiasVeja {
-    color: black;
+    position: absolute;
+    left: 87%;
     text-decoration: none;
-    font-size: 23px;
-    font-weight: 700;
-    margin-left: 167rem;
     font-family: "Tahoma";
+    font-weight: 700;
+    font-size: 25px;
+    color: black;
 }
 
 .noticiasVeja:hover {

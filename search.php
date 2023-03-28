@@ -1,56 +1,72 @@
-<?php require_once 'header.php'; ?>     
-            
-<div class="container"></div>
+<?php require_once 'header.php'; ?>
 
-    <div class="col-sm-8 offset-2"></div>
+<section id="Resultados">
+    <?php
+    if (have_posts()) { ?>
         <?php
-        if ( have_posts() ) { ?>
+        while (have_posts()) {
+            the_post(); ?>
 
-            <?php
-                while (have_posts()) {
-                    the_post(); ?>
+            <div class="ResultCard">
+                <div class="media-body">
+                    <div class="ImgResult">
+                        <img class="img-fluid" src="<?php the_post_thumbnail_url('thumbnail') ?>"
+                            class="media-object img-rounded" style="width:" title="<?php the_title_attribute(); ?>"
+                            alt="<?php the_title_attribute(); ?>">
+                    </div>
 
-
-                        <div class="media">
-
-                            <div class="media-left">
-                                <img class="img-fluid" src="<?php the_post_thumbnail_url( 'thumbnail' ) ?>" class="media-object img-rounded" style="width:" title="<?php the_title_attribute(); ?>" alt="<?php the_title_attribute(); ?>">
+                    <ul>
+                        <li>
+                            <h3 class="ResultTittle">
+                                <?php the_title(); ?>
+                            </h3>
+                        </li>
+                        <li>
+                            <div>
+                                <span class="meta_data meta_pad"><i class="fa fa clock-o" aria-hidden="true"></i>
+                                    <?php the_time('m/d/y'); ?>
+                                </span>
+                                <span class="meta_data"> <i class="fa fa user" aria-hidden="true"></i>
+                                    <?php the_author(); ?>
+                                </span>
                             </div>
-
-                            <div class="media-body">
-                                <h3 class="media-heading"><?php the_title(); ?></h3>
-                                    <div>
-                                        <span class="meta_data meta_pad"><i class="fa fa clock-o" aria-hidden="true"></i><?php the_time('m/d/y'); ?></span>
-                                        <span class="meta_data"> <i class="fa fa user" aria-hidden="true"></i> <?php the_author(); ?></span>
-                                    </div>
-
-                                        <!--hidden for mobile-->
-                                        <p class="hidden_mobile hidden-xs">
-                                            <?php echo wp_trim_words( get_the_content(), $num_words = 12, $more = null)?>
-                                        </p>
-                                        <!--hidden for pc and tablet-->
-
-                                        <div class="buttom_blog_style">
-                                        <a class=" bnt_custom" href="<?php the_permalink(); ?>">Read more <i class="fa fa long-arrow-right" aria-hidden="true"></i> </a>
-                                        </div>
-
+                        </li>
+                        <!--hidden for mobile-->
+                        <li>
+                            <p class="hidden_mobile hidden-xs">
+                                <?php echo wp_trim_words(get_the_content(), $num_words = 12, $more = null) ?>
+                            </p>
+                        </li>
+                        <!--hidden for pc and tablet-->
+                        <li>
+                            <div class="buttom_blog_style">
+                                <a class=" bnt_custom" href="<?php the_permalink(); ?>">Read more <i
+                                        class="fa fa long-arrow-right" aria-hidden="true"></i> </a>
                             </div>
-                        </div>
-                    
-            <?php }
-        ?>
-
-
-    <?php }else{ ?>
-        <h1>No result for this search query!</h1>
-        <h1>No result for this search query!</h1>
-        <h1>No result for this search query!</h1>
-        <h1>No result for this search query!</h1>
-        <h1>No result for this search query!</h1>
-        <h4>resultados para:<?php the_title(); ?></h4>
+                        </li>
+                    </ul>
+                </div>
+                </ul>
+            </div>
         <?php }
         ?>
-        
 
 
-<?php require_once 'footer.php'; ?>
+    <?php } else { ?>
+        <h1>No result for this search query!</h1>
+        <h1>No result for this search query!</h1>
+        <h1>No result for this search query!</h1>
+        <h1>No result for this search query!</h1>
+        <h1>No result for this search query!</h1>
+        <h4>resultados para:
+            <?php the_title(); ?>
+        </h4>
+    <?php }
+    ?>
+</section>
+
+<div id="Seach-footer">
+    <div>
+        <?php require_once 'footer.php'; ?>
+    </div>
+</div>

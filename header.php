@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/dropdown.css' ?>">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/css/caroselteste.css' ?>">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() . '/testeSliderjs/style.css' ?>">
-
 </head>
 
 <body>
@@ -65,7 +64,3 @@
                 <a target="_blank" href="https://twitter.com/novacap" class="fa fa-twitter"></a>
             </section>
     </header>
-
-    <!-- menu-laranja -->
-
-    <div class="view2 intro hm-purple-light" id="starter" style="z-index: 2;">

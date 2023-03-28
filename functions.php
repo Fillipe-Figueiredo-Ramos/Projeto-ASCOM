@@ -5,15 +5,15 @@ function my_theme_setup()
 {
     function menu()
     {
-        add_theme_support('nav-menu');
+     add_theme_support('nav-menu');
     }
-    register_nav_menus(
+     register_nav_menus(
         array(
-            'local' => 'Primary',
+            'location' => 'Menu-principal',
+           'descrepition'=> 'Menu',
         )
     );
 }
-
 //logo pelo wordpress
 
 function logo()

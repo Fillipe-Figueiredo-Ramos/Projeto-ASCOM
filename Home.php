@@ -31,11 +31,11 @@ endif;
 <?php
 wp_nav_menu(
     array(
-        'theme_location' => 'primary',
-        'menu_class' => 'nav-list',
+        'menu' => 'Menu-principal',
+        'menu_id'=> 'nav-menu'
+        
     )
 );
-
 ?>
 
 <div class="wave">
@@ -71,7 +71,8 @@ wp_nav_menu(
         );
 
         $my_posts = get_posts($args);
-        foreach ($my_posts as $post) { ?>
+        foreach ($my_posts as $post) {
+            ?>
             <?php
             $link = get_post_meta($post->ID, 'link', true); /*Links para ancorrar a pages*/
             $BackgroundColor = get_post_meta($post->ID, 'Cor', true); /* Links para ancorrar a pages */
@@ -159,7 +160,7 @@ wp_nav_menu(
     <a href="#" class="vejaTodos">Veja todos >>></a>
 </section>
 
-<div id="noticiasCotainer">
+<div id="noticiasContainer">
     <div id="noticias">
         <ul>
             <li>
@@ -284,15 +285,6 @@ wp_nav_menu(
     <div id="tvTitulo">
         <img id="TvImg" src="<?php echo get_stylesheet_directory_uri() . '/assets/img/TV.png' ?>" alt="Logo TV NOVACAP">
         <h1>NOVACAP</h1>
-        <div id="travessão-ps-1">
-            <h2 class="travessão-1"></h2>
-        </div>
-        <div id="travessão-ps-2">
-            <h2 class="travessão-2"></h2>
-        </div>
-        <div id="travessão-ps-3">
-            <h2 class="travessão-3"></h2>
-        </div>
     </div>
     <p id="tvSub">Saiba todas as obras e ações que estão acontecendo no Distrito Federal</p>
     <!-- carrossel -->
