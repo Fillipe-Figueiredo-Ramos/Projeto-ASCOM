@@ -13,7 +13,7 @@ require_once 'header.php';
         'post_type' => 'banners',
         'post_status' => 'publish',
         'posts_per_page' => 1,
-        'category_name' => 'administrativo'
+        'category_name' => 'principal'
     );
 
     $query = new WP_Query($args);
@@ -43,6 +43,35 @@ require_once 'header.php';
     </div>
 </div>
 
+<!-- começo da pagina -->
+    <?php $args = [
+        'post_type' => 'aviso',
+        'post_status' => 'publish',
+        'posts_per_page' => 'number of posts'
+    ];
+
+    $my_posts = get_posts($args);
+    foreach ($my_posts as $post) { ?>
+        <div class="CardAviso">
+            <!--Imagem aviso-->
+            <ul>
+                <li>
+                    <div class="Thumbnail-Aviso">
+                        <?php the_post_thumbnail(); ?>
+                    </div>
+                </li>
+                <!--Título do aviso-->
+                <li>
+                    <p class="TittleAviso">
+                        <?php echo $post->post_title; ?>
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+    <?php } ?>
+    <a href="#" class="vejaTodos">Veja todos >>></a>
+</section>
 
 
 <?php
