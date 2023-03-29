@@ -5,12 +5,12 @@ function my_theme_setup()
 {
     function menu()
     {
-     add_theme_support('nav-menu');
+    add_theme_support('nav-menu');
     }
-     register_nav_menus(
+    register_nav_menus(
         array(
             'location' => 'Menu-principal',
-           'descrepition'=> 'Menu',
+            'descrepition'=> 'Menu',
         )
     );
 }

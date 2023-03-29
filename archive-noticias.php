@@ -12,7 +12,7 @@ require_once 'header.php';
         'post_type' => 'banners',
         'post_status' => 'publish',
         'posts_per_page' => 1,
-        'category_name' => 'principal'
+        'category_name' => 'noticias'
     );
 
     $query = new WP_Query($args);

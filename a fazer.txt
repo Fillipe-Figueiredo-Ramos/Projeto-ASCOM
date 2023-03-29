@@ -1,0 +1,3 @@
+pesquisar perma link (fazer com que o titulo da noticia/aviso vire um link que leve para uma pagina onde seja exibido o conteudo por completo)
+front end das paginas de arquivo
+arquivo normas etc
