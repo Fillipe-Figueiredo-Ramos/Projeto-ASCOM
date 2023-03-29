@@ -51,39 +51,40 @@ require_once 'header.php';
 </div>
 
 <!-- começo da pagina -->
-<?php $args = [
-        'post_type' => 'noticias',
-        'post_status' => 'publish',
-        'posts_per_page' => '100000000000000000000000000'
-    ];
+<section class="secao-Item-noticia">
+    <?php $args = [
+            'post_type' => 'noticias',
+            'post_status' => 'publish',
+            'posts_per_page' => '100000000000000000000000000'
+        ];
 
-    $my_posts = get_posts($args);
-    foreach ($my_posts as $post) { ?>
-        <div class="item-Noticia">
-            <!--Imagem noticia-->
-            <ul>
-                <li>
-                    <div class="imagem-Item-Noticia">
-                        <?php the_post_thumbnail(); ?>
-                    </div>
-                </li>
-                <!--Título da noticia-->
-                <li>
-                    <p class="titulo-Item-Noticia">
-                        <?php echo $post->post_title; ?>
-                    </p>
-                </li>
-                <!--Resumo da noticia-->
-                <li>
-                    <p class="resumo-Item-Noticia">
-                        <?php echo $post->post_excerpt; ?>
-                    </p>
-                </li>
+        $my_posts = get_posts($args);
+        foreach ($my_posts as $post) { ?>
+            <div class="item-Noticia">
+                <!--Imagem noticia-->
+                <ul>
+                    <li>
+                        <div class="imagem-Item-Noticia">
+                            <?php the_post_thumbnail(); ?>
+                        </div>
+                    </li>
+                    <!--Título da noticia-->
+                    <li>
+                        <p class="titulo-Item-Noticia">
+                            <?php echo $post->post_title; ?>
+                        </p>
+                    </li>
+                    <!--Resumo da noticia-->
+                    <li>
+                        <p class="resumo-Item-Noticia">
+                            <?php echo $post->post_excerpt; ?>
+                        </p>
+                    </li>
 
-            </ul>
-        </div>
-    <?php } ?>
-
+                </ul>
+            </div>
+        <?php } ?>
+</section>
 
 
 

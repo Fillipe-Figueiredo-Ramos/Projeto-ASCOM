@@ -1,9 +1,8 @@
-<?php /*Template Name: arquivo avisos */?>
+<?php /*Template Name: arquivo normas, relatorios e procedimentos */?>
 
 <?php
 require_once 'header.php';
 ?>
-
 <div class="view2 intro hm-purple-light" id="starter" style="z-index: 2;">
 
     <?php
@@ -40,6 +39,7 @@ require_once 'header.php';
         </svg>
     </div>
 </div>
+
 <!--body-->
 
 <!--libras-->
@@ -51,35 +51,46 @@ require_once 'header.php';
 </div>
 
 <!-- começo da pagina -->
-<section class="secao-Item-Aviso">
-    <?php $args = [
-        'post_type' => 'aviso',
+<?php $args = [
+        'post_type' => '',
         'post_status' => 'publish',
         'posts_per_page' => '100000000000000000000000000'
     ];
 
     $my_posts = get_posts($args);
     foreach ($my_posts as $post) { ?>
-        <div class="item-Aviso">
-            <!--Imagem aviso-->
+        <div>
+            <!--Imagem-->
             <ul>
-<!-- descomentar caso queiramos imagem com o aviso -->
-                <!-- <li>
-                    <div class="imagem-Item-Aviso">
-                        <?php //the_post_thumbnail(); ?>
-                    </div>
-                </li> -->
-                <!--Título do aviso-->
                 <li>
-                    <p class="titulo-Item-Aviso">
+                    <div>
+                        <?php the_post_thumbnail(); ?>
+                    </div>
+                </li>
+                <!--Título-->
+                <li>
+                    <p>
                         <?php echo $post->post_title; ?>
+                    </p>
+                </li>
+                <!--Resumo-->
+                <li>
+                    <p>
+                        <?php echo $post->post_excerpt; ?>
+                    </p>
+                </li>
+                <!-- Conteudo -->
+                <li>
+                    <p>
+                        <?php echo $post->post_content; ?>
                     </p>
                 </li>
 
             </ul>
         </div>
     <?php } ?>
-</section>
+
+
 
 
 <?php
