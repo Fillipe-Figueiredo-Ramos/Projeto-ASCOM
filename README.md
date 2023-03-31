@@ -244,7 +244,7 @@ body {
 *Reclamações* | _162_
 >
 >
-**Colaboraodores** | **GitHub page**
+**Colaboradores** | **GitHub**
 -------------- | ----------------
 **Fillipe Vitor Figueiredo Ramos** | https://github.com/Fillipe-Figueiredo-Ramos
 **Rafael Alencar do Amaral** | https://github.com/RafaelOsama
