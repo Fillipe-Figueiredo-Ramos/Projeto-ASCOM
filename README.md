@@ -84,14 +84,6 @@ Nessa página você vai encontrar todos os campos de obras e desenvolvimento ref
 8. >Go to link localhost:8000
 
 --------------------------------------------------------------
-**Propriedade** | **Descrição**
------------ | -----------
-*Novacap Ouvidoria* |  https://ouvidoria.df.gov.br/ 
-*Sujestão* | https://ouvidoria.df.gov.br/carta-servico-cidadao/
-*Acesso a informações* | https://www.df.gov.br/category/acesso-a-informacao/
-*Reclamações* | _162_
->
->
 **Colaboradores** | **GitHub**
 -------------- | ----------------
 **Fillipe Vitor Figueiredo Ramos** | https://github.com/Fillipe-Figueiredo-Ramos
