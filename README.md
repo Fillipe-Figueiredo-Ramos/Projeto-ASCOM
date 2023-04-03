@@ -68,8 +68,6 @@ Nessa página você vai encontrar todos os campos de obras e desenvolvimento ref
 
 * WordPress
 ```
->
->
 
 # Clonar, organizar e instalar para iniciar localmente
 1. >Run git clone
@@ -80,8 +78,8 @@ Nessa página você vai encontrar todos os campos de obras e desenvolvimento ref
 6. >Run php artisan db:seed
 7. >Run php artisan serve
 8. >Go to link localhost:8000
->
->
+
+
 ```
 
 **Propriedade** | **Descrição**
