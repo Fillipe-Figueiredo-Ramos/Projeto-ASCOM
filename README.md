@@ -67,6 +67,7 @@ Nessa página você vai encontrar todos os campos de obras e desenvolvimento ref
 * CSS
 
 * WordPress
+```
 >
 >
 
@@ -81,7 +82,7 @@ Nessa página você vai encontrar todos os campos de obras e desenvolvimento ref
 8. >Go to link localhost:8000
 >
 >
-
+```
 
 **Propriedade** | **Descrição**
 ----------- | -----------
