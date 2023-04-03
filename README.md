@@ -67,7 +67,9 @@ Nessa página você vai encontrar todos os campos de obras e desenvolvimento ref
 * CSS
 
 * WordPress
-........................................................
+>
+>
+
 # Clonar, organizar e instalar para iniciar localmente
 1. >Run git clone
 2. >Run composer install
