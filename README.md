@@ -5,9 +5,12 @@
 [Avisos & Comunicados](#aviso-legal--comunicados-oficiais) |
 [Notícias](#notícias) |
 [TV Novacap](#tv-novacap)
+[Tecnologias](#tecnologias-utilizadas-no-projetoascom) |
+[Como Clonar](#clonar-organizar-e-instalar-para-iniciar-localmente) 
+
 
 # Bem vindo a pagina intranet da Novacap.
-Nessa página você vai encontrar todos os campos de obras e desenvolvimento referente a **Novacap** em todo  _Distrito Federal e entorno._
+Nessa página você vai encontrar todos os campos de obras e desenvolvimento referente a **Novacap** em todo  _Distrito Federal e entorno.
 
 **Ultimos updates:**
 
