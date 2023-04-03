@@ -6,7 +6,7 @@
 [Notícias](#notícias) |
 [TV Novacap](#tv-novacap) |
 [Tecnologias](#tecnologias-utilizadas-no-projetoascom) |
-[Como Clonar](#clonar-organizar-e-instalar-para-iniciar-localmente) 
+[Clonar, organizar e instalar](#clonar-organizar-e-instalar-para-iniciar-localmente) 
 
 
 # Bem vindo a pagina intranet da Novacap.
