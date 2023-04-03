@@ -4,7 +4,7 @@
 [Rede social](#rede-social) |
 [Avisos & Comunicados](#aviso-legal--comunicados-oficiais) |
 [Notícias](#notícias) |
-[TV Novacap](#tv-novacap)
+[TV Novacap](#tv-novacap) |
 [Tecnologias](#tecnologias-utilizadas-no-projetoascom) |
 [Como Clonar](#clonar-organizar-e-instalar-para-iniciar-localmente) 
 
