@@ -70,7 +70,7 @@ Nessa página você vai encontrar todos os campos de obras e desenvolvimento ref
 
 
 # Clonar, organizar e instalar para iniciar localmente
-```
+
 1. >Run git clone
 2. >Run composer install
 3. >Run cp .env.example .env
@@ -79,9 +79,6 @@ Nessa página você vai encontrar todos os campos de obras e desenvolvimento ref
 6. >Run php artisan db:seed
 7. >Run php artisan serve
 8. >Go to link localhost:8000
-
-
-```
 
 **Propriedade** | **Descrição**
 ----------- | -----------
