@@ -85,7 +85,7 @@ img.custom-logo {
 }
 
 .imagem-banner img {
-    height: 872px;
+    height: 914px;
     width: 2019px;
 }
 
@@ -94,7 +94,7 @@ img.custom-logo {
     width: 110%;
     height: 6.5%;
     background-color: #2314f1;
-    top: 90rem;
+    top: 94.5rem;
 }
 
 .custom-shape-divider-bottom-1679004214 {
@@ -4037,246 +4037,89 @@ footer h1 {
 
 } */
 
-/* macbook 13" */
-@media (min-width: 1680px) and (max-width: 1919px) {
-
-    .imagem-banner {
-        margin-left: -341px;
-        width: 126%;
-    }
-
-    .imagem-banner img {
-        height: 830px;
-        width: 2037px;
-    }
-
-    #menu {
-        right: -1px;
-        width: 683px;
-    }
-
-    #menu a {
-        font-size: 15px;
-    }
-
-    #wave {
-        margin-top: -44.9%;
-        width: 117%;
-    }
-
-    #containerFluid__cards {
-        margin-left: 14rem;
-        margin-top: 1.2rem;
-    }
-
-    .card-gif {
-        width: 25rem;
-    }
-
-    .gif img {
-        width: 26rem;
-    }
-
-    .Avisos h1 {
-        margin-left: 44rem;
-        margin-top: 11rem;
-    }
-
-    .Avisos p {
-        margin-left: 62.7rem;
-        margin-top: 18px;
-    }
-
-    .imagem-aviso {
-        width: 49rem;
-        margin-left: -11.9rem;
-        height: 40rem;
-    }
-
-    #containerAviso img {
-        max-width: 43rem;
-        height: 28rem;
-    }
-
-    #p1 {
-        width: 436px;
-        margin-left: -9rem;
-        font-size: 18px;
-        margin-top: -7rem;
-    }
-
-    .vejaTodos {
-        margin-left: 20rem;
-        font-size: 20px;
-        margin-top: -5rem;
-    }
-
-    .noticias h1 {
-        margin-top: -3rem;
-    }
-
-    .carousel-inner {
-        width: 97%;
-        margin-left: -33px;
-
-    }
-
-    .carousel-item img {
-        margin-left: 117px;
-        width: 1495px;
-        height: 832px;
-        overflow: hidden;
-        ;
-    }
-
-    .seta-1 {
-        margin-left: 78px;
-        margin-top: -32px;
-    }
-
-    .seta-2 {
-        margin-right: -20px;
-        margin-top: -32px;
-    }
-
-    .carousel-title-box {
-        margin-left: 117px;
-        width: 1495px;
-        height: 109px;
-        overflow: hidden;
-    }
-
-    .tituloCarousel {
-        width: 1549px;
-    }
-
-    .infoCarousel {
-        width: 1469px;
-    }
-
-    #noticiaCol {
-        margin-left: -228px;
-    }
-
-    #noticiasCartao {
-        width: 773px;
-        margin-left: -6px;
-    }
-
-    #noticiaData {
-        margin-right: 543px;
-    }
-
-    .noticiasVeja {
-        margin-left: 145rem;
-        font-size: 20px;
-    }
-
-    #tps {
-        margin-left: -109px;
-    }
-
-    #lps {
-        margin-left: -4px;
-    }
-
-    #travessão-ps-1 {
-        margin-top: 72px;
-    }
-
-    #travessão-ps-2 {
-        margin-top: 72px;
-    }
-
-    #travessão-ps-3 {
-        margin-top: 72px;
-    }
-
-    #tvNovacap img {
-        max-width: 182px;
-        height: 103px;
-    }
-
-    #tvNovacap {
-        margin-left: 15px;
-    }
-
-    .containerCarrossel {
-        width: 44vw
-    }
-
-    #tvVidTitulo {
-        margin-left: -30px;
-    }
-
-    #tvTitulo h1 {
-        font-size: 55px;
-    }
-
-    .h4 {
-        width: 543px;
-    }
-
-    .img_presidente {
-        margin-left: -211px;
-    }
-
-    .paralelograma #titulo {
-        margin-left: 89px;
-    }
-
-    #texto {
-        margin-left: -184px;
-    }
-
-    #texto-p1 {
-        font-size: 20px;
-        width: 1018px;
-    }
-
-    .jow {
-        margin-top: -28px;
-    }
-
-    #DiretU {
-        margin-left: 35rem;
-    }
-
-    #DEINFRA {
-        margin-left: 49rem;
-    }
-
-    #DEINFRA p {
-        font-size: 19px;
-    }
-
-    #DPJ {
-        margin-left: 48rem;
-    }
-
-    #NormasGerais {
-        margin-left: 25rem;
-    }
-
-    #TelefoneSessão {
-        margin-top: 12em;
-    }
-
-    #pontilhado {
-        margin-left: 34rem;
-    }
-
-    #waveFooter {
-        width: 103vw;
-    }
-
-    #VJ {
-        margin-left: 327px;
-    }
-
-
-
+/* Arquivo Noticias */
+.secao-Item-noticia{
+    display: block;
+    margin-top: 85px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-/* FullHD */
-@media (min-width: 1920px) {}
+#Item-Not ul{
+    display: flex;
+}
+
+.item-Noticia{
+    height: 350px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+    box-shadow: 7px 7px 30px black;
+    border-radius: 15px;
+}
+
+.imagem-Item-Noticia img{
+    height: 350px;
+    width: 530px;
+    position: relative;
+    margin-right: 20px;
+    right: 20px;
+    border-top-left-radius: 15px; 
+    border-bottom-left-radius: 15px;
+}
+
+.Texto-Noticia{
+    display: flex;
+    flex-direction: column;
+}
+.titulo-Item-Noticia{
+    font-size: x-large;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.resumo-Item-Noticia{
+    font-size: 20px;
+    padding-right: 35px;
+}
+
+.link-Item-Noticia{
+    font-size: large;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 35px;
+}
+
+/* Arquivo Avisos */
+
+.secao-Item-Aviso{
+    margin-top: 85px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.item-Aviso ul{
+    display: block;
+    box-shadow: 7px 7px 30px black; ;
+}
+
+.item-Aviso{
+    width: 580px;
+    height: 400px;
+}
+
+
+.imagem-Item-Aviso img {
+    position: relative;
+    width: 103.5%;
+    height: 350px;
+    right: 20px;
+}
+
+.Texto-Aviso{
+}
+.titulo-Item-Aviso{
+    font-size: 25px;
+}
+
+.resumo-Item-Aviso{
+}

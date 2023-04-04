@@ -61,22 +61,18 @@ require_once 'header.php';
     $my_posts = get_posts($args);
     foreach ($my_posts as $post) { ?>
         <div class="item-Aviso">
-            <!--Imagem aviso-->
-            <ul>
-<!-- descomentar caso queiramos imagem com o aviso -->
-                <!-- <li>
-                    <div class="imagem-Item-Aviso">
-                        <?php //the_post_thumbnail(); ?>
-                    </div>
-                </li> -->
-                <!--Título do aviso-->
-                <li>
-                    <p class="titulo-Item-Aviso">
-                        <?php echo $post->post_title; ?>
-                    </p>
-                </li>
-
-            </ul>
+                <ul>
+                    <li class="imagem-Item-Aviso">
+                            <?php the_post_thumbnail(); ?>
+                    </li>
+                    <!--Título do aviso-->
+                    <li class="titulo-Item-Aviso">
+                        <a href="#">
+                            <?php echo $post->post_title; ?>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     <?php } ?>
 </section>

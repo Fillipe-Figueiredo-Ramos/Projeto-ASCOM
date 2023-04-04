@@ -62,26 +62,32 @@ require_once 'header.php';
         foreach ($my_posts as $post) { ?>
             <div class="item-Noticia">
                 <!--Imagem noticia-->
-                <ul>
-                    <li>
-                        <div class="imagem-Item-Noticia">
-                            <?php the_post_thumbnail(); ?>
+                <div id="Item-Not">
+                    <ul>
+                        <li>
+                            <div class="imagem-Item-Noticia">
+                                <?php the_post_thumbnail(); ?>
+                            </div>
+                        </li>
+                        <!--Título da noticia-->
+                        <div class="Texto-Noticia">
+                            <li>
+                                <p class="titulo-Item-Noticia">
+                                    <?php echo $post->post_title; ?>
+                                </p>
+                            </li>
+                            <!--Resumo da noticia-->
+                            <li>
+                                <p class="resumo-Item-Noticia">
+                                    <?php echo $post->post_excerpt; ?>
+                                </p>
+                            </li>
+                            <li>
+                                <a class="link-Item-Noticia" href="#">Veja Mais ></a>
+                            </li>
                         </div>
-                    </li>
-                    <!--Título da noticia-->
-                    <li>
-                        <p class="titulo-Item-Noticia">
-                            <?php echo $post->post_title; ?>
-                        </p>
-                    </li>
-                    <!--Resumo da noticia-->
-                    <li>
-                        <p class="resumo-Item-Noticia">
-                            <?php echo $post->post_excerpt; ?>
-                        </p>
-                    </li>
-
-                </ul>
+                    </ul>
+                </div>
             </div>
         <?php } ?>
 </section>
