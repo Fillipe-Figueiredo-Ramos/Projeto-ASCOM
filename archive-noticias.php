@@ -83,7 +83,7 @@ require_once 'header.php';
                                 </p>
                             </li>
                             <li>
-                                <a class="link-Item-Noticia" href="#">Veja Mais ></a>
+                                <a class="link-Item-Noticia" href="<?php echo the_permalink();?>">Veja Mais ></a>
                             </li>
                         </div>
                     </ul>

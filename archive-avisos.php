@@ -67,7 +67,7 @@ require_once 'header.php';
                     </li>
                     <!--Título do aviso-->
                     <li class="titulo-Item-Aviso">
-                        <a href="#">
+                        <a href="<?php echo the_permalink();?>">
                             <?php echo $post->post_title; ?>
                         </a>
                     </li>

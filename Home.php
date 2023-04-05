@@ -149,15 +149,15 @@ wp_nav_menu(
                 </li>
                 <!--Título do aviso-->
                 <li>
-                    <p class="TittleAviso">
+                    <a href="<?php echo the_permalink();?>" class="TittleAviso">
                         <?php echo $post->post_title; ?>
-                    </p>
+                    </a>
                 </li>
 
             </ul>
         </div>
     <?php } ?>
-    <a href="#" class="vejaTodos">Veja todos >>></a>
+    <a href="http://localhost/INTRANET%20ASCOM/index.php/arquivo-avisos/" class="vejaTodos">Veja todos >>></a>
 </section>
 
 <div id="noticiasContainer">
@@ -277,7 +277,7 @@ wp_nav_menu(
 </section>
 
 <!-- fim dos blocos -->
-<a class="noticiasVeja" href="#">Veja todos >>></a>
+<a class="noticiasVeja" href="http://localhost/INTRANET%20ASCOM/index.php/arquivo-noticias/">Veja todos >>></a>
 
 </div>
 <!-- TV NOVACAP -->
