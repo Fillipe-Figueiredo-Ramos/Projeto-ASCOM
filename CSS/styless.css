@@ -3105,7 +3105,7 @@ header {
 }
 
 #ouv {
-    margin-top: -180px;
+   /*  margin-top: -180px; */
     width: 46.4rem;
     height: 56.4rem;
 }
@@ -4095,11 +4095,19 @@ footer h1 {
     margin-top: 85px;
     display: grid;
     grid-template-columns:repeat(3,1fr);
+    justify-items: center;
+    row-gap: 66px;
 }
 
 .item-Aviso ul{
-    display: block;
-    box-shadow: 7px 7px 30px black; ;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    box-shadow: 7px 7px 30px black;
+    border-radius: 15px 15px 15px 15px;
+    height: 420px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .item-Aviso{
@@ -4110,9 +4118,11 @@ footer h1 {
 
 .imagem-Item-Aviso img {
     position: relative;
-    width: 103.5%;
+    width: 540px;
     height: 350px;
-    right: 20px;
+    right: 12px;
+    border-radius: 15px 15px 15px 15px;
+
 }
 
 .Texto-Aviso{
@@ -4122,4 +4132,31 @@ footer h1 {
 }
 
 .resumo-Item-Aviso{
+}
+
+
+/* SINGLE  */
+
+.single-Bloco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.single-Title{
+    font-size: xxx-large;
+    font-weight: 900;
+    margin-bottom: 40px;;
+}
+
+.single-Img{
+    margin-bottom: 25px;
+}
+
+.single-Content{
+    font-size: x-large;
+    font-weight: 400;
+    padding-right: 50px;
+    padding-left: 50px;
 }
