@@ -1,5 +1,8 @@
-<?php /* Template Name: arquivo avisos */ ?>
-<?php require_once 'header.php'; ?>
+<?php /*Template Name: arquivo avisos */?>
+
+<?php
+require_once 'header.php';
+?>
 
 <div class="view2 intro hm-purple-light" id="starter" style="z-index: 2;">
 
@@ -24,9 +27,10 @@
     <?php
         endwhile;
     endif;
-    ?>
-</div>
 
+    ?>
+
+</div>
 <div class="wave">
     <div class="custom-shape-divider-bottom-1679004214">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -36,7 +40,6 @@
         </svg>
     </div>
 </div>
-
 <!--body-->
 
 <!--libras-->
@@ -50,41 +53,47 @@
 <!-- começo da pagina -->
 <section class="secao-Item-Aviso">
     <?php 
-    $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-    $args = array(
+    $args = [
         'post_type' => 'aviso',
         'post_status' => 'publish',
-        'posts_per_page' => 6,
-        'paged' => $paged
-    );
+        'posts_per_page' => '3',
+    ];
 
-    $my_posts = new WP_Query($args);
-    if ($my_posts->have_posts()): 
-    while ($my_posts->have_posts()): $my_posts->the_post(); ?>
+    $my_posts = get_posts($args);
+    foreach ($my_posts as $post) { ?>
         <div class="item-Aviso">
-            <ul>
-                <li class="imagem-Item-Aviso">
-                    <?php the_post_thumbnail(); ?>
-                </li>
-                <li class="titulo-Item-Aviso">
-                    <a href="<?php the_permalink(); ?>">
-                        <?php the_title(); ?>
-                    </a>
-                </li>
-            </ul>
+                <ul>
+                    <li class="imagem-Item-Aviso">
+                            <?php the_post_thumbnail(); ?>
+                    </li>
+                    <!--Título do aviso-->
+                    <li class="titulo-Item-Aviso">
+                        <a href="<?php echo the_permalink();?>">
+                            <?php echo $post->post_title; ?>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    <?php endwhile; ?>
+    <?php } ?>
     <div class="paginacao">
-        <?php echo paginate_links(array(
-            'total' => $my_posts->max_num_pages,
-            'prev_text' => '<',
-            'next_text' => '>',
-            'type' => 'list',
-            'current' => max(1, get_query_var('paged')),
-        )); ?>
-    </div>
-    <?php wp_reset_postdata();
-    endif; ?>
-</section>
+        
+    <?php
+    $args = array(
+        'mid_size' => 2,
+        'prev_next' => true,
+        'prev_text' => '<',
+        'next_text' => '>',
+        'type' => 'list'
+    );
+    echo paginate_links($args);
+    ?>
 
-<?php get_footer(); ?>
+
+
+
+    </div>
+</section>
+<?php
+require_once 'footer.php';
+?>

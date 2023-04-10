@@ -4160,3 +4160,14 @@ footer h1 {
     padding-right: 50px;
     padding-left: 50px;
 }
+
+
+/* paginação */
+
+.paginacao ul{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 100px;
+    font-size: x-large;
+}

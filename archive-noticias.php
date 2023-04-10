@@ -52,14 +52,18 @@ require_once 'header.php';
 
 <!-- começo da pagina -->
 <section class="secao-Item-noticia">
-    <?php $args = [
+    <?php
+    $paged = (get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+    $args = array( 
             'post_type' => 'noticias',
             'post_status' => 'publish',
-            'posts_per_page' => '100000000000000000000000000'
-        ];
+            'posts_per_page' => 6,
+            'paged' => $paged
+);
 
-        $my_posts = get_posts($args);
-        foreach ($my_posts as $post) { ?>
+        $my_posts = new WP_Query($args);
+        if ($my_posts->have_posts()):
+        while ($my_posts->have_posts()): $my_posts->the_post(); ?>
             <div class="item-Noticia">
                 <!--Imagem noticia-->
                 <div id="Item-Not">
@@ -89,7 +93,19 @@ require_once 'header.php';
                     </ul>
                 </div>
             </div>
-        <?php } ?>
+            <?php endwhile; ?>
+            <div class="paginacao">
+        <?php echo paginate_links(array(
+            'total' => $my_posts->max_num_pages,
+            'prev_text' => '<',
+            'next_text' => '>',
+            'type' => 'list',
+            'current' => max(1, get_query_var('paged')),
+        )); ?>
+    </div>
+    <?php wp_reset_postdata();
+    endif; ?>
+
 </section>
 
 

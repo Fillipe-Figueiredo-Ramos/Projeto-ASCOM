@@ -192,4 +192,42 @@ function Cartões()
     add_theme_support('post-thumbnails');
 }
 add_action('init', 'Cartões');
-?>
+
+
+
+
+
+/* paginação */
+
+global $wp_query;
+
+$big = 999999999; // número muito grande para substituir
+// Obtém o número total de páginas
+$total_pages = $wp_query->max_num_pages;
+// Verifica se há mais de uma página
+if ($total_pages > 1) {
+    // Obtém o número da página atual
+    $current_page = max(1, get_query_var('paged'));
+    // Configura as opções para os links de paginação
+    $pagination_args = array(
+        'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+        'format' => '?paged=%#%',
+        'current' => $current_page,
+        'total' => $total_pages,
+        'prev_text' => __('Anterior'),
+        'next_text' => __('Próximo'),
+        'type' => 'array',
+    );
+    // Obtém os links de paginação
+    $pagination_links = paginate_links($pagination_args);
+    // Exibe os links de paginação
+    if ($pagination_links) {
+        echo '<div class="pagination">';
+        echo '<ul>';
+        foreach ($pagination_links as $link) {
+            echo '<li>' . $link . '</li>';
+        }
+        echo '</ul>';
+        echo '</div>';
+    }
+}
